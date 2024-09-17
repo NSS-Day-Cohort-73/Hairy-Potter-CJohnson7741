@@ -1,4 +1,5 @@
 export const firePottery = (object, temperature) => {
+    
     // create and set a "fired" property to true
     object.fired = true
     

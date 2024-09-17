@@ -1,7 +1,7 @@
 let potteryToSellArray = []
 
 export const toSellOrNotToSell = (object) =>{
-    //if the object is NOT cracked set a price based on weight and push it to the potteryToSellArray
+    // if the object is NOT cracked set a price based on weight and push it to the potteryToSellArray
     if(object.cracked === false){
         if(object.weight >= 6){
             object.price = 40
@@ -10,6 +10,9 @@ export const toSellOrNotToSell = (object) =>{
     }
     potteryToSellArray.push(object)
 }
+
+// sort the potteryToSellArray by price to order the list. This can be changed to sort other properties.
+potteryToSellArray.sort((elementOne,elementTwo) => elementTwo.price - elementOne.price)
 return object
 }
 

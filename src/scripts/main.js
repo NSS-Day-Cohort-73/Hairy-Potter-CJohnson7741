@@ -14,7 +14,6 @@ let bowl = makePottery("bowl", 5, 3)
 let waterCarrier = makePottery("cylinder", 15, 60)
 
 // Fire each piece of pottery in the kiln
-
 firePottery(mug, 2)
 firePottery(vase, 2600)
 firePottery(pot, 2200)

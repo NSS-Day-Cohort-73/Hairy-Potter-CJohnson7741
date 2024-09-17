@@ -120,12 +120,12 @@ In the `main.js` module, invoke the `PotteryList` component function. Take its r
 > 🧨 Before you click the "Assessment Complete" button on the Learning Platform, add your answers below for each question and make a commit. It is your option to request a face-to-face meeting with a coach for a vocabulary review.
 
 1. Explain how you got the HTML, with the correct data, displayed in the browser?
-   > Your answer here
+   > First I sorted the data using the functions in the potteryCatalogue.js module and created an array. Then I used the potteryList() function in potteryList.js to iterate over the resulting potteryToSellArray and create an HTML entry for each element of the array. This is concatenated to the potteryHTML variable and returned to main.js. In main.js I change the inner HTML property of the HTML element with the id potteryArticle to match the potteryHTML string.
 2. In the **PotteryList** module, when you iterate your pottery, you need to show the evidence of what the **weight** property's value is for the 2nd piece of pottery. Use [Loom](https://www.loom.com/) to record your browser window with the developer tools open and show those values.
    > Paste your video's public URL here
 3. The **PotteryWheel** module has a single function named `makePottery`. Why doesn't that module have all of the other code in it?
-   > Your answer here
+   > Breaking the program up into modules allows for greater flexibility and reusability of code. By breaking up the program into modules with distinct responsibilities you make it so anytime you need to handle that responsibility in another program you can reuse the module with minimum changes to the module itself. It also makes the program easier to read and understand.
 4. The pottery shop has learned that there is a set of customers that are willing to buy cracked pottery at a discounted price of $2.50. That means that the cracked pottery should now be displayed in the catalog. Explain the changes that this new business strategy would cause to your algorithm.
-   > Your answer here
+   > I would need to add an else statement in potteryCatalogue in the toSellOrNotToSell() function. This else statement would set the price tp 2.50 and then add the item to the potteryToSellArray.
 5. In the **Kiln** module, you have a `firePottery()` function. You need to demonstrate how to use the debugger to verify the values of the parameters for that function when your code runs. Use [Loom](https://www.loom.com/) to record your browser window with the developer tools open and show those values.
    > Paste your video's public URL here
